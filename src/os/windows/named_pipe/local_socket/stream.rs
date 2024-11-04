@@ -21,7 +21,7 @@ type SendHalfImpl = SendPipeStream<Bytes>;
 /// Wrapper around [`DuplexPipeStream`] that implements
 /// [`Stream`](crate::local_socket::traits::Stream).
 #[derive(Debug)]
-pub struct Stream(pub(super) StreamImpl);
+pub struct Stream(pub StreamImpl);
 
 impl Sealed for Stream {}
 impl traits::Stream for Stream {
